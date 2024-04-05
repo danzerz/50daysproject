@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 700px;
+  width: 1300px;
+  /* border: 2px solid red; */
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* position: relative; */
+}
+
+.main-left {
+  width: 35%;
+  height: 100%;
+  flex-direction: row;
+  border: 2px solid green;
+  background-image: url("./images/bg-main-desktop.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.card {
+  position: absolute;
+  /* border: 2px solid green; */
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0 0 12%;
+}
+.front {
+  position: relative;
+  background-image: url("./images/bg-card-front.png");
+  height: 370px;
+  width: 450px;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  overflow: hidden;
+  /* border: 2px solid blue; */
+}
+.card-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: 2px solid red; */
+  padding: 9em 0 0 2em;
+
+  /* margin-bottom: 4rem; */
+
+  /* position: absolute; */
+  /* padding: 0 0 3em 2em; */
+}
+.name-date {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-date {
+  /* border: 2px solid red; */
+  margin-right: 2em;
+}
+
+.back {
+  background-image: url("./images/bg-card-back.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 500px;
+  margin: 5% 0 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back .cvv {
+  /* border: 2px solid red; */
+  margin: 0 0 12px 17em;
+}
+.main-right {
+  width: 75%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20em;
+  flex-wrap: wrap;
+}
+.layout {
+  /* display: blocke; */
+  height: 400px;
+  width: 300px;
+  /* border: 2px solid red; */
+}
+
+#form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+  /* padding: 1em; */
+}
+
+#cardnumber,
+#name {
+  display: block;
+  height: 2.5em;
+  width: 100%;
+  border-radius: 5px;
+  /* margin-bottom: 2em; */
+}
+#name {
+  /* margin-top: 2em; */
+  margin-bottom: 2em;
+}
+
+.date {
+  /* border: 2px solid red; */
+
+  display: flex;
+  /* border: 2px solid green; */
+  /* width: 100%; */
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+  /* padding: 4em; */
+}
+
+.date #month {
+  border-radius: 9px;
+  /* border: 2px solid red; */
+  width: 4em;
+  display: block;
+  /* margin: 0 0 5px 0; */
+}
+.date #year {
+  display: block;
+  height: 2.3em;
+  width: 4em;
+  margin: 0 0 0 6px;
+  /* border: 2px solid red; */
+  border-radius: 9px;
+  /* margin: 5px 0 0 0; */
+}
+#cvc-no {
+  /* border: 2px solid red; */
+  border-radius: 9px;
+  height: 2.3em;
+  width: 8em;
+}
+.btn {
+  height: 3em;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+  margin-top: 4em;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.btn:active {
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+}
+.date_row {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.cvc-no {
+  display: flex;
+  flex-direction: column;
+}
